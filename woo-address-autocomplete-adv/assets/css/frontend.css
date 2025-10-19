@@ -1,0 +1,66 @@
+/* Inline tools shown below Address 1 */
+.bp-addr-inline-tools{ margin:.35rem 0 0; }
+.bp-addr-trigger{
+  margin-left:0;
+  font-weight:600;
+  background:#fff;
+  border:1px solid #d1d5db;
+  border-radius:8px;
+  padding:.28rem .6rem;
+  cursor:pointer;
+  display:inline-flex;
+  gap:.4rem;
+  align-items:center;
+  line-height:1;
+}
+.bp-addr-trigger:hover{ background:#f9fafb; border-color:#9ca3af; }
+
+/* Popup + overlay */
+.bp-addr-overlay{
+  position:fixed; inset:0; background:rgba(0,0,0,.45);
+  display:none; align-items:center; justify-content:center; z-index:9999;
+}
+.bp-addr-dialog{
+  background:#fff; width:min(640px, 92vw); border-radius:12px;
+  box-shadow:0 10px 35px rgba(0,0,0,.25); padding:18px;
+}
+.bp-addr-header{ display:flex; align-items:center; justify-content:space-between; margin-bottom:10px; }
+.bp-addr-title{ font-size:1.05rem; font-weight:600; }
+.bp-addr-close{
+  background:transparent; border:0; cursor:pointer; padding:6px; line-height:0; font-size:18px;
+}
+.bp-addr-body{ padding-top:6px; }
+
+/* Google web component style (white) */
+.bp-gmaps-autocomplete{
+  --gmpx-color-surface:#fff;
+  --gmpx-menu-color-surface:#fff;
+  --gmpx-color-on-surface:#111827;
+  --gmpx-menu-color-on-surface:#111827;
+
+  --gmpx-color-outline:#d1d5db;
+  --gmpx-color-outline-hover:#9ca3af;
+  --gmpx-color-primary:#0ea5e9;
+
+  --gmpx-font-family: inherit;
+  --gmpx-font-size:16px;
+  --gmpx-line-height:1.4;
+
+  --gmpx-border-radius:10px;
+  --gmpx-padding-vertical:12px;
+  --gmpx-padding-horizontal:14px;
+
+  display:block; width:100%;
+}
+
+@media (prefers-color-scheme:dark){
+  .bp-addr-dialog{ background:#111214; color:#f3f4f6; }
+  .bp-gmaps-autocomplete{
+    --gmpx-color-surface:#111214;
+    --gmpx-menu-color-surface:#111214;
+    --gmpx-color-on-surface:#f3f4f6;
+    --gmpx-menu-color-on-surface:#f3f4f6;
+    --gmpx-color-outline:#374151;
+    --gmpx-color-outline-hover:#4b5563;
+  }
+}
